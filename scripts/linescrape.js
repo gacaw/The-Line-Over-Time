@@ -4,6 +4,7 @@ import { parse } from "json2csv";
 import path from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
+import * as cheerio from "cheerio";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -51,19 +52,50 @@ async function fetchLines(book) {
         const $ = cheerio.load(text);
         const lines = [];
 
-        // Example selectors (update these based on your HTML structure)
-        $(".event").each((i, el) => {
-            const teams = $(el).find(".event-title").text().trim();
-            const spread = $(el).find(".spread-class").text().trim();
-            const moneyline = $(el).find(".moneyline-class").text().trim();
-            const total = $(el).find(".total-class").text().trim();
+        // Select all NBA game links
+        $("a[href*='/basketball/nba/']").each((i, el) => {
+            const teams = $(el).text().trim();
+
+            // Find the nearest parent div that contains all three odds divs
+            let oddsContainer = null;
+            $(el).parents("div").each((_, parent) => {
+                const $parent = $(parent);
+                if (
+                    $parent.find("div[aria-label^='Spread Betting']").length &&
+                    $parent.find("div[aria-label^='Moneyline']").length &&
+                    $parent.find("div[aria-label^='Total Points']").length
+                ) {
+                    oddsContainer = $parent;
+                    return false; // break out of .each()
+                }
+            });
+
+            if (!oddsContainer) {
+                // Debug: print if odds container not found for this game
+                console.warn(`No odds container found for: ${teams}`);
+                return;
+            }
+
+            // Extract odds using aria-label selectors and get the numbers from the spans
+            const spreadDiv = oddsContainer.find("div[aria-label^='Spread Betting']").first();
+            const moneylineDiv = oddsContainer.find("div[aria-label^='Moneyline']").first();
+            const totalDiv = oddsContainer.find("div[aria-label^='Total Points']").first();
+
+            // Get the visible numbers from the spans
+            const spread = spreadDiv.find("span").first().text() || "";
+            const spreadOdds = spreadDiv.find("span").eq(1).text() || "";
+            const moneyline = moneylineDiv.find("span").first().text() || "";
+            const total = totalDiv.find("span").first().text() || "";
+            const totalOdds = totalDiv.find("span").eq(1).text() || "";
 
             lines.push({
                 Sportsbook: book.name,
                 Teams: teams,
                 Spread: spread,
+                SpreadOdds: spreadOdds,
                 Moneyline: moneyline,
                 Total: total,
+                TotalOdds: totalOdds,
             });
         });
 
