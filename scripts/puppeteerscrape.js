@@ -36,7 +36,7 @@ function getESTTimestamp() {
 
     const estTimestamp = getESTTimestamp();
 
-    const lines = await page.$$eval("a[href*='/basketball/nba/']", (links) => {
+    const lines = await page.$$eval("a[href*='/basketball/nba/']", (links, estTimestamp) => {
         const results = [];
         links.forEach(link => {
             const teams = link.textContent.trim();
@@ -57,7 +57,8 @@ function getESTTimestamp() {
             const total = totalDiv ? totalDiv.querySelector("span")?.textContent.trim() : "";
             const totalOdds = totalDiv ? totalDiv.querySelectorAll("span")[1]?.textContent.trim() : "";
 
-            console.log(`Teams: ${teams}, Spread: ${spread}, Spread Odds: ${spreadOdds}, Moneyline: ${moneyline}, Total: ${total}, Total Odds: ${totalOdds}`);
+            // print data for debugging
+            // console.log(`Teams: ${teams}, Spread: ${spread}, Spread Odds: ${spreadOdds}, Moneyline: ${moneyline}, Total: ${total}, Total Odds: ${totalOdds}`);
 
             results.push({
                 Timestamp: estTimestamp,
@@ -70,12 +71,19 @@ function getESTTimestamp() {
             });
         });
         return results;
-    }, estTimestamp);
+    }, estTimestamp );
 
     if (lines.length) {
         const header = Object.keys(lines[0]).join(",") + "\n";
-        const rows = lines.map(obj => Object.values(obj).join(",")).join("\n");
-        fs.writeFileSync(CSV_FILE_PATH, header + rows);
+        const rows = lines.map(obj => Object.values(obj).join(",")).join("\n") + "\n";
+
+        const fileExists = fs.existsSync(CSV_FILE_PATH);
+        
+        if (!fileExists) {
+                fs.writeFileSync(CSV_FILE_PATH, header + rows);
+        } else {
+            fs.appendFileSync(CSV_FILE_PATH, "\n" + rows);
+        }
         console.log(`Saved ${lines.length} lines to ${CSV_FILE_PATH}`);
     } else {
         console.log("No lines found.");
