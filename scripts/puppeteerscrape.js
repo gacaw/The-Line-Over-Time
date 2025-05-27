@@ -18,7 +18,7 @@ function getESTTimestamp() {
 }
 
 (async () => {
-    const browser = await puppeteer.launch({ headless: false, slowMo: 50 });
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
     await page.setViewport({ width: 1280, height: 800 });
