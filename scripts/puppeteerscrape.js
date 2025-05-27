@@ -1,8 +1,11 @@
 import puppeteer from "puppeteer";
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const DATA_DIRECTORY = path.resolve("./data");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const DATA_DIRECTORY = path.resolve(__dirname, "../data");
 if (!fs.existsSync(DATA_DIRECTORY)) {
     fs.mkdirSync(DATA_DIRECTORY, { recursive: true });
 }
@@ -52,6 +55,8 @@ const CSV_FILE_PATH = path.join(DATA_DIRECTORY, "linedata.csv");
             const moneyline = moneylineDiv ? moneylineDiv.querySelector("span")?.textContent.trim() : "";
             const total = totalDiv ? totalDiv.querySelector("span")?.textContent.trim() : "";
             const totalOdds = totalDiv ? totalDiv.querySelectorAll("span")[1]?.textContent.trim() : "";
+
+            console.log(`Teams: ${teams}, Spread: ${spread}, Spread Odds: ${spreadOdds}, Moneyline: ${moneyline}, Total: ${total}, Total Odds: ${totalOdds}`);
 
             results.push({
                 Teams: teams,
