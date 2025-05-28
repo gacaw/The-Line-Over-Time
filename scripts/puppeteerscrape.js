@@ -87,4 +87,4 @@ function getESTTimestamp() {
     return now.toLocaleString("en-US", { timeZone: "America/New_York" });
 }
 
-( scrapeAndSave );
+scrapeAndSave();
