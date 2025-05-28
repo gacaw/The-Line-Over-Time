@@ -1,9 +1,9 @@
 name: Run FanDuel Scraper
 
-on:
-  schedule:
-    - cron: "*/30 * * * *"  # Runs every 30 minutes
-  workflow_dispatch:        # Manual trigger for testing
+#on:
+ # schedule:
+   # - cron: "*/30 * * * *"  # Runs every 30 minutes
+ # workflow_dispatch:        # Manual trigger for testing
 
 jobs:
   scrape:
