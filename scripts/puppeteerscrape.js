@@ -1,4 +1,8 @@
-import puppeteer from "puppeteer";
+import puppeteer from 'puppeteer-extra';
+import StealthPlugin from 'puppeteer-extra-plugin-stealth';
+
+puppeteer.use(StealthPlugin());
+
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -48,7 +52,7 @@ async function scrapeAndSave() {
         ],
     });
 
-    await retry(() => page.waitForSelector("a[href*='/basketball/nba/']", { timeout: 30000 }));
+    await retry(() => page.waitForSelector("a[href*='/basketball/nba/']", { timeout: 60000 }));
 
     const estTimestamp = getESTTimestamp();
 
