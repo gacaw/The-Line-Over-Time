@@ -10,7 +10,10 @@ const DATA_DIRECTORY = path.resolve(__dirname, "../data");
 
 
 async function scrapeAndSave() {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+        headless: true,
+        args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
     const page = await browser.newPage();
 
     await page.setViewport({ width: 1280, height: 800 });
@@ -35,6 +38,9 @@ async function scrapeAndSave() {
                 oddsContainer = oddsContainer.parentElement;
             }
             if (!oddsContainer) return;
+            const timeElem = oddsContainer.querySelector("time[datetime]");
+            const gameTime = timeElem ? timeElem.getAttribute("datetime") : "";
+
             const spreadDiv = oddsContainer.querySelector("div[aria-label^='Spread Betting']");
             const moneylineDiv = oddsContainer.querySelector("div[aria-label^='Moneyline']");
             const totalDiv = oddsContainer.querySelector("div[aria-label^='Total Points']");
@@ -46,6 +52,7 @@ async function scrapeAndSave() {
             results.push({
                 Timestamp: estTimestamp,
                 Teams: teams,
+                GameTime: gameTime,
                 Spread: spread,
                 SpreadOdds: spreadOdds,
                 Moneyline: moneyline,
