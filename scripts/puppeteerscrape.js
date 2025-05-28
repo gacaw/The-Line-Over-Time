@@ -8,6 +8,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DATA_DIRECTORY = path.resolve(__dirname, "../data");
 
+async function retry(fn, retries = 3) {
+    for (let i = 0; i < retries; i++) {
+        try {
+            return await fn();
+        } catch (error) {
+            if (i === retries - 1) throw error;
+        }
+    }
+}
 
 async function scrapeAndSave() {
     const browser = await puppeteer.launch({
@@ -28,10 +37,18 @@ async function scrapeAndSave() {
         headers: {
             "Accept-Language": "en-US,en;q=0.9",
             "Referer": "https://sportsbook.fanduel.com/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         },
+        cookies: [
+            {
+                name: "session_id",
+                value: "your_session_token_here",
+                domain: "sportsbook.fanduel.com",
+            },
+        ],
     });
-    await page.screenshot({ path: "fanduel_debug.png", fullPage: true });
-    await page.waitForSelector("a[href*='/basketball/nba/']", { timeout: 120000 }); //120 seconds
+
+    await retry(() => page.waitForSelector("a[href*='/basketball/nba/']", { timeout: 30000 }));
 
     const estTimestamp = getESTTimestamp();
 
