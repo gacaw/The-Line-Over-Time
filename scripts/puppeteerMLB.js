@@ -6,7 +6,6 @@ puppeteer.use(StealthPlugin());
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { timeStamp } from "console";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -36,7 +35,7 @@ async function scrapeAndSave() {
 
     page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
-    await page.goto("https://sportsbook.fanduel.com/navigation/nba", {
+    await page.goto("https://sportsbook.fanduel.com/navigation/mlb", {
         waitUntil: "networkidle2",
         headers: {
             "Accept-Language": "en-US,en;q=0.9",
@@ -52,11 +51,11 @@ async function scrapeAndSave() {
         ],
     });
 
-    await retry(() => page.waitForSelector("a[href*='/basketball/nba/']", { timeout: 60000 }));
+    await retry(() => page.waitForSelector("a[href*='/basketball/mlb/']", { timeout: 60000 }));
 
     const estTimestamp = getESTTimestamp();
 
-    const lines = await page.$$eval("a[href*='/basketball/nba/']", (links, estTimestamp) => {
+    const lines = await page.$$eval("a[href*='/basketball/mlb/']", (links, estTimestamp) => {
         const results = [];
         links.forEach(link => {
             const teams = link.textContent.trim();
@@ -107,14 +106,10 @@ async function scrapeAndSave() {
     await browser.close();
 };
 
-
-
-
-
 if (!fs.existsSync(DATA_DIRECTORY)) {
     fs.mkdirSync(DATA_DIRECTORY, { recursive: true });
 }
-const CSV_FILE_PATH = path.join(DATA_DIRECTORY, "linedataNBA.csv");
+const CSV_FILE_PATH = path.join(DATA_DIRECTORY, "linedata.csv");
 
 function getESTTimestamp() {
     const now = new Date();
