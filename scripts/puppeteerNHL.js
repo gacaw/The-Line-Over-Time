@@ -44,9 +44,6 @@ async function scrapeAndSave() {
         },
     });
 
-    const html = await page.content();
-    fs.writeFileSync(path.join(DATA_DIRECTORY, "fanduel_response.html"), html);
-
     await retry(() => page.waitForSelector("a[href*='/ice-hockey/nhl/']", { timeout: 60000 }));
 
     const estTimestamp = getESTTimestamp();
