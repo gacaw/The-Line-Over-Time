@@ -42,13 +42,6 @@ async function scrapeAndSave() {
             "Referer": "https://sportsbook.fanduel.com/",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         },
-        cookies: [
-            {
-                name: "session_id",
-                value: "your_session_token_here",
-                domain: "sportsbook.fanduel.com",
-            },
-        ],
     });
 
     await retry(() => page.waitForSelector("a[href*='/basketball/nba/']", { timeout: 60000 }));

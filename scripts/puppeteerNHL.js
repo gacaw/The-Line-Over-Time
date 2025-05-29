@@ -42,34 +42,30 @@ async function scrapeAndSave() {
             "Referer": "https://sportsbook.fanduel.com/",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         },
-        cookies: [
-            {
-                name: "session_id",
-                value: "your_session_token_here",
-                domain: "sportsbook.fanduel.com",
-            },
-        ],
     });
 
-    await retry(() => page.waitForSelector("a[href*='/basketball/nhl/']", { timeout: 60000 }));
+    const html = await page.content();
+    fs.writeFileSync(path.join(DATA_DIRECTORY, "fanduel_response.html"), html);
+
+    await retry(() => page.waitForSelector("a[href*='/ice-hockey/nhl/']", { timeout: 60000 }));
 
     const estTimestamp = getESTTimestamp();
 
-    const lines = await page.$$eval("a[href*='/basketball/nhl/']", (links, estTimestamp) => {
+    const lines = await page.$$eval("a[href*='/ice-hockey/nhl/']", (links, estTimestamp) => {
         const results = [];
         links.forEach(link => {
             const teams = link.textContent.trim();
             let oddsContainer = link.parentElement;
-            while (oddsContainer && oddsContainer.querySelectorAll("div[aria-label^='Spread Betting']").length === 0) {
+            while (oddsContainer && oddsContainer.querySelectorAll("div[aria-label^='Puck Line']").length === 0) {
                 oddsContainer = oddsContainer.parentElement;
             }
             if (!oddsContainer) return;
             const timeElem = oddsContainer.querySelector("time[datetime]");
             const gameTime = timeElem ? timeElem.getAttribute("datetime") : "";
 
-            const spreadDiv = oddsContainer.querySelector("div[aria-label^='Spread Betting']");
+            const spreadDiv = oddsContainer.querySelector("div[aria-label^='Puck Line']");
             const moneylineDiv = oddsContainer.querySelector("div[aria-label^='Moneyline']");
-            const totalDiv = oddsContainer.querySelector("div[aria-label^='Total Points']");
+            const totalDiv = oddsContainer.querySelector("div[aria-label^='Total Goals']");
             const spread = spreadDiv ? spreadDiv.querySelector("span")?.textContent.trim() : "";
             const spreadOdds = spreadDiv ? spreadDiv.querySelectorAll("span")[1]?.textContent.trim() : "";
             const moneyline = moneylineDiv ? moneylineDiv.querySelector("span")?.textContent.trim() : "";

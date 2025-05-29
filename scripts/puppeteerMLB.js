@@ -42,32 +42,25 @@ async function scrapeAndSave() {
             "Referer": "https://sportsbook.fanduel.com/",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         },
-        cookies: [
-            {
-                name: "session_id",
-                value: "your_session_token_here",
-                domain: "sportsbook.fanduel.com",
-            },
-        ],
     });
 
-    await retry(() => page.waitForSelector("a[href*='/basketball/mlb/']", { timeout: 60000 }));
+    await retry(() => page.waitForSelector("a[href*='/baseball/mlb/']", { timeout: 60000 }));
 
     const estTimestamp = getESTTimestamp();
 
-    const lines = await page.$$eval("a[href*='/basketball/mlb/']", (links, estTimestamp) => {
+    const lines = await page.$$eval("a[href*='/baseball/mlb/']", (links, estTimestamp) => {
         const results = [];
         links.forEach(link => {
             const teams = link.textContent.trim();
             let oddsContainer = link.parentElement;
-            while (oddsContainer && oddsContainer.querySelectorAll("div[aria-label^='Spread Betting']").length === 0) {
+            while (oddsContainer && oddsContainer.querySelectorAll("div[aria-label^='Run Line']").length === 0) {
                 oddsContainer = oddsContainer.parentElement;
             }
             if (!oddsContainer) return;
             const timeElem = oddsContainer.querySelector("time[datetime]");
             const gameTime = timeElem ? timeElem.getAttribute("datetime") : "";
 
-            const spreadDiv = oddsContainer.querySelector("div[aria-label^='Spread Betting']");
+            const spreadDiv = oddsContainer.querySelector("div[aria-label^='Run Line']");
             const moneylineDiv = oddsContainer.querySelector("div[aria-label^='Moneyline']");
             const totalDiv = oddsContainer.querySelector("div[aria-label^='Total Points']");
             const spread = spreadDiv ? spreadDiv.querySelector("span")?.textContent.trim() : "";
