@@ -1,5 +1,4 @@
 import { exec } from "child_process";
-
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -16,24 +15,24 @@ function runScript(scriptName) {
     });
 }
 
-
-function msUntilNext(minute) {
+function msUntilNext5() {
     const now = new Date();
     const next = new Date(now);
     next.setSeconds(0, 0);
-    next.setMinutes(Math.ceil((now.getMinutes() - minute) / 15) * 15 + minute);
-    if (next <= now) next.setMinutes(next.getMinutes() + 15);
+    next.setMinutes(Math.ceil(now.getMinutes() / 5) * 5);
+    if (next <= now) next.setMinutes(next.getMinutes() + 5);
     return next - now;
 }
 
-function scheduleScript(scriptName, minute) {
-    const delay = msUntilNext(minute);
-    setTimeout(() => {
-        runScript(scriptName);
-        setInterval(() => runScript(scriptName), 15 * 60 * 1000);
-    }, delay);
+function runAllScripts() {
+    runScript("puppeteerMLB.js");
+    runScript("puppeteerNBA.js");
+    runScript("puppeteerNHL.js");
 }
 
-scheduleScript("puppeteerMLB.js", 0);
-scheduleScript("puppeteerNBA.js", 5);
-scheduleScript("puppeteerNHL.js", 10);
+runAllScripts();
+
+setTimeout(() => {
+    runAllScripts();
+    setInterval(runAllScripts, 5 * 60 * 1000);
+}, msUntilNext5());
