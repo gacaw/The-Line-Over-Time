@@ -1,6 +1,5 @@
 import csv
 import re
-from collections import defaultdict
 from datetime import datetime
 
 INPUT = '../data/linedata.csv'
@@ -26,24 +25,35 @@ def detect_sport(teams_str):
     else:
         return "Basketball"
 
-def parse_datetime(dt_str):
+def parse_game_time(game_time):
+    from datetime import timezone
     try:
-        return datetime.fromisoformat(dt_str.replace("Z", "+00:00"))
+        if game_time:
+            dt = datetime.fromisoformat(game_time.replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
     except Exception:
-        return None
+        pass
+    return datetime.min.replace(tzinfo=timezone.utc)
 
+current_game_time = None
 games = {}
 
 with open(INPUT, newline='', encoding='utf-8') as infile:
     reader = csv.DictReader(infile)
     for row in reader:
-        if not row['Teams'] or row['Teams'].startswith('More wagers') or row['Teams'].startswith('same game'):
+        teams_raw = row['Teams'].strip()
+        if teams_raw.startswith('More wagers'):
+            dt = row.get('DateTime', '').strip()
+            if dt:
+                current_game_time = dt
+            continue
+        if teams_raw.startswith('same game'):
             continue
 
         date_recorded = row['DateRecorded'].strip()
         time_recorded = row['TimeRecorded'].strip()
-        teams_raw = row['Teams'].strip()
-        game_time = row['DateTime'].strip()
         total = row['Total'].strip()
         total_odds = row['TotalOdds'].strip()
         moneyline = row.get('Moneyline', '').strip()
@@ -53,6 +63,8 @@ with open(INPUT, newline='', encoding='utf-8') as infile:
         team1, team2 = parse_teams(teams_raw)
         pitcher1, pitcher2 = parse_pitchers(teams_raw)
         sport = detect_sport(teams_raw)
+        game_time = current_game_time if current_game_time else ""
+
         game_key = (game_time, sport, team1, team2)
 
         datapoint = {
@@ -75,13 +87,23 @@ with open(INPUT, newline='', encoding='utf-8') as infile:
             }
         games[game_key]['History'].append(datapoint)
 
+# Sort games by sport, then by game time
+sorted_games = sorted(
+    games.values(),
+    key=lambda g: (g['Sport'], parse_game_time(g['GameTime']))
+)
+
 with open(OUTPUT, 'w', newline='', encoding='utf-8') as outfile:
     fieldnames = [
         'GameTime', 'Sport', 'Teams', 'Pitchers', 'History'
     ]
     writer = csv.DictWriter(outfile, fieldnames=fieldnames)
     writer.writeheader()
-    for game in games.values():
+    last_sport = None
+    for game in sorted_games:
+        if last_sport is not None and game['Sport'] != last_sport:
+            writer.writerow({fn: "" for fn in fieldnames})
+        last_sport = game['Sport']
         history_str = ""
         for dp in game['History']:
             history_str += (

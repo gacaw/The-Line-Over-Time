@@ -69,29 +69,43 @@ async function scrapeAndSave() {
             const total = totalDiv ? totalDiv.querySelector("span")?.textContent.trim() : "";
             const totalOdds = totalDiv ? totalDiv.querySelectorAll("span")[1]?.textContent.trim() : "";
             results.push({
-                Timestamp: estTimestamp,
-                Teams: teams,
-                GameTime: gameTime,
-                Spread: spread,
-                SpreadOdds: spreadOdds,
-                Moneyline: moneyline,
-                Total: total,
-                TotalOdds: totalOdds,
+                Timestamp: " Timestamp: " + (estTimestamp || "N/A"),
+                Teams: " Teams: " + (teams || "N/A"),
+                GameTime: " Gametime: " + (gameTime || "N/A"),
+                Spread: " Spread: " + (spread || "N/A"),
+                SpreadOdds: " SpreadOdds: " + (spreadOdds || "N/A"),
+                Moneyline: " Moneyline: " + (moneyline || "N/A"),
+                Total: " O/U: " + (total || "N/A"),
+                TotalOdds: " O/U Odds: " + (totalOdds || "N/A"),
             });
         });
         return results;
     }, estTimestamp);
 
-    if (lines.length) {
-        const header = Object.keys(lines[0]).join(",") + "\n";
-        const rows = lines.map(obj => Object.values(obj).join(",")).join("\n") + "\n";
+    let processedLines = [];
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        if (line.Teams.includes("More wagers")) continue;
+        if (
+            i + 1 < lines.length &&
+            lines[i + 1].Teams.includes("More wagers") &&
+            lines[i + 1].GameTime.trim() !== "Gametime: N/A"
+        ) {
+            line.GameTime = lines[i + 1].GameTime;
+        }
+        processedLines.push(line);
+    }
+
+    if (processedLines.length) {
+        const header = Object.keys(processedLines[0]).join(",") + "\n";
+        const rows = processedLines.map(obj => Object.values(obj).join(",")).join("\n") + "\n";
         const fileExists = fs.existsSync(CSV_FILE_PATH);
         if (!fileExists) {
             fs.writeFileSync(CSV_FILE_PATH, header + rows);
         } else {
             fs.appendFileSync(CSV_FILE_PATH, "\n" + rows);
         }
-        console.log(`Saved ${lines.length} lines to ${CSV_FILE_PATH}`);
+        console.log(`Saved ${processedLines.length} lines to ${CSV_FILE_PATH}`);
     } else {
         console.log("No lines found.");
     }
