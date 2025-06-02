@@ -6,7 +6,6 @@ INPUT = '../data/linedata.csv'
 OUTPUT = '../data/sorteddata.csv'
 
 def parse_line(line):
-    # Regex to extract all fields, including League at the start
     pattern = (
         r"(\w+), Timestamp: ([^,]+, [^,]+), Teams: ([^,]+), Gametime: ([^,]+), "
         r"Spread: ([^,]+), SpreadOdds: ([^,]+), Moneyline: ([^,]+), "
@@ -73,7 +72,6 @@ with open(INPUT, encoding='utf-8') as infile:
             }
         games[game_key]['History'].append(datapoint)
 
-# Sort by League, then by game date, then by game time, then by teams
 def game_sort_key(g):
     dt = parse_game_time(g['GameTime'])
     date = dt.date() if dt != datetime.min.replace(tzinfo=dt.tzinfo) else datetime.min.date()
@@ -92,11 +90,9 @@ with open(OUTPUT, 'w', newline='', encoding='utf-8') as outfile:
     writer.writeheader()
     last_league = None
     for game in sorted_games:
-        # Insert a blank line between leagues
         if last_league is not None and game['League'] != last_league:
             outfile.write('\n')
         last_league = game['League']
-        # Format history as a string
         history_str = ""
         for dp in game['History']:
             history_str += (
