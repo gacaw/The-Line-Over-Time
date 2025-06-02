@@ -51,12 +51,24 @@ async function scrapeAndSave() {
     const lines = await page.$$eval("a[href*='/ice-hockey/nhl/']", (links, estTimestamp) => {
         const results = [];
         links.forEach(link => {
-            const teams = link.textContent.trim();
             let oddsContainer = link.parentElement;
             while (oddsContainer && oddsContainer.querySelectorAll("div[aria-label^='Puck Line']").length === 0) {
                 oddsContainer = oddsContainer.parentElement;
             }
             if (!oddsContainer) return;
+
+            const teamSpans = oddsContainer.querySelectorAll("span[aria-label]");
+            let teamNames = [];
+            teamSpans.forEach(span => {
+                if (span.getAttribute("aria-label")) {
+                    teamNames.push(span.getAttribute("aria-label"));
+                }
+            });
+
+            teamNames = [...new Set(teamNames)];
+
+            const teams = teamNames.length === 2 ? `${teamNames[0]} ${teamNames[1]}` : link.textContent.trim();
+
             const timeElem = oddsContainer.querySelector("time[datetime]");
             const gameTime = timeElem ? timeElem.getAttribute("datetime") : "";
 
