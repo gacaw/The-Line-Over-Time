@@ -81,6 +81,7 @@ async function scrapeAndSave() {
             const total = totalDiv ? totalDiv.querySelector("span")?.textContent.trim() : "";
             const totalOdds = totalDiv ? totalDiv.querySelectorAll("span")[1]?.textContent.trim() : "";
             results.push({
+                League: "NHL",
                 Timestamp: " Timestamp: " + (estTimestamp || "N/A"),
                 Teams: " Teams: " + (teams || "N/A"),
                 GameTime: " Gametime: " + (gameTime || "N/A"),

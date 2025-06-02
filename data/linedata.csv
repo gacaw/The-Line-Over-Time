@@ -1,13 +1,37 @@
-DateRecorded,TimeRecorded,Teams,DateTime,Total,TotalOdds
+League,DateRecorded,TimeRecorded,Teams,DateTime,Odds
 
- Timestamp: 6/2/2025, 11:18:25 AM, Teams: Indiana Pacers Oklahoma City Thunder, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9, SpreadOdds: -106, Moneyline: +315, O/U: O 230.5, O/U Odds: -112
+MLB, Timestamp: 6/2/2025, 11:59:01 AM, Teams: Colorado Rockies Miami Marlins, Gametime: 2025-06-02T22:41:00.000Z, Spread: +1.5, SpreadOdds: -130, Moneyline: +166, O/U: O 8, O/U Odds: -114
+MLB, Timestamp: 6/2/2025, 11:59:01 AM, Teams: Milwaukee Brewers Cincinnati Reds, Gametime: 2025-06-02T23:11:00.000Z, Spread: -1.5, SpreadOdds: +162, Moneyline: +100, O/U: O 9, O/U Odds: -112
+MLB, Timestamp: 6/2/2025, 11:59:01 AM, Teams: Los Angeles Angels Boston Red Sox, Gametime: 2025-06-02T23:11:00.000Z, Spread: +1.5, SpreadOdds: -160, Moneyline: +124, O/U: O 9.5, O/U Odds: -115
+MLB, Timestamp: 6/2/2025, 11:59:01 AM, Teams: Detroit Tigers Chicago White Sox, Gametime: 2025-06-02T23:41:00.000Z, Spread: -1.5, SpreadOdds: -137, Moneyline: -215, O/U: O 8.5, O/U Odds: +102
+MLB, Timestamp: 6/2/2025, 11:59:01 AM, Teams: San Diego Padres San Francisco Giants, Gametime: 2025-06-03T01:46:00.000Z, Spread: +1.5, SpreadOdds: -146, Moneyline: +146, O/U: O 7.5, O/U Odds: -102
+MLB, Timestamp: 6/2/2025, 11:59:01 AM, Teams: Minnesota Twins Athletics, Gametime: 2025-06-03T02:06:00.000Z, Spread: -1.5, SpreadOdds: +100, Moneyline: -162, O/U: O 9.5, O/U Odds: +100
+MLB, Timestamp: 6/2/2025, 11:59:01 AM, Teams: New York Mets Los Angeles Dodgers, Gametime: 2025-06-03T02:11:00.000Z, Spread: +1.5, SpreadOdds: -146, Moneyline: +134, O/U: O 9, O/U Odds: -122
 
- Timestamp: 6/2/2025, 11:18:26 AM, Teams: Florida Panthers Edmonton Oilers, Gametime: 2025-06-05T00:00:06.000Z, Spread: +1.5, SpreadOdds: -230, Moneyline: +110, O/U: O 6.5, O/U Odds: +110
+NBA, Timestamp: 6/2/2025, 11:59:01 AM, Teams: Indiana Pacers Oklahoma City Thunder, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9, SpreadOdds: -106, Moneyline: +320, O/U: O 230.5, O/U Odds: -112
 
- Timestamp: 6/2/2025, 11:18:26 AM, Teams: Colorado Rockies Miami Marlins, Gametime: 2025-06-02T22:41:00.000Z, Spread: +1.5, SpreadOdds: -130, Moneyline: +166, O/U: O 8, O/U Odds: -114
- Timestamp: 6/2/2025, 11:18:26 AM, Teams: Milwaukee Brewers Cincinnati Reds, Gametime: 2025-06-02T23:11:00.000Z, Spread: -1.5, SpreadOdds: +164, Moneyline: +102, O/U: O 9, O/U Odds: -112
- Timestamp: 6/2/2025, 11:18:26 AM, Teams: Los Angeles Angels Boston Red Sox, Gametime: 2025-06-02T23:11:00.000Z, Spread: +1.5, SpreadOdds: -162, Moneyline: +124, O/U: O 9.5, O/U Odds: -115
- Timestamp: 6/2/2025, 11:18:26 AM, Teams: Detroit Tigers Chicago White Sox, Gametime: 2025-06-02T23:41:00.000Z, Spread: -1.5, SpreadOdds: -128, Moneyline: -205, O/U: O 8.5, O/U Odds: +102
- Timestamp: 6/2/2025, 11:18:26 AM, Teams: San Diego Padres San Francisco Giants, Gametime: 2025-06-03T01:46:00.000Z, Spread: +1.5, SpreadOdds: -142, Moneyline: +146, O/U: O 7.5, O/U Odds: +102
- Timestamp: 6/2/2025, 11:18:26 AM, Teams: Minnesota Twins Athletics, Gametime: 2025-06-03T02:06:00.000Z, Spread: -1.5, SpreadOdds: -102, Moneyline: -162, O/U: O 9.5, O/U Odds: +100
- Timestamp: 6/2/2025, 11:18:26 AM, Teams: New York Mets Los Angeles Dodgers, Gametime: 2025-06-03T02:11:00.000Z, Spread: +1.5, SpreadOdds: -142, Moneyline: +138, O/U: O 9, O/U Odds: -122
+NHL, Timestamp: 6/2/2025, 11:59:01 AM, Teams: Florida Panthers Edmonton Oilers, Gametime: 2025-06-05T00:00:06.000Z, Spread: +1.5, SpreadOdds: -230, Moneyline: +110, O/U: O 6.5, O/U Odds: +110
+
+NBA, Timestamp: 6/2/2025, 12:00:05 PM, Teams: Indiana Pacers Oklahoma City Thunder, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9, SpreadOdds: -106, Moneyline: +320, O/U: O 230.5, O/U Odds: -112
+
+NHL, Timestamp: 6/2/2025, 12:00:05 PM, Teams: Florida Panthers Edmonton Oilers, Gametime: 2025-06-05T00:00:06.000Z, Spread: +1.5, SpreadOdds: -230, Moneyline: +110, O/U: O 6.5, O/U Odds: +110
+
+MLB, Timestamp: 6/2/2025, 12:00:06 PM, Teams: Colorado Rockies Miami Marlins, Gametime: 2025-06-02T22:41:00.000Z, Spread: +1.5, SpreadOdds: -130, Moneyline: +166, O/U: O 8, O/U Odds: -114
+MLB, Timestamp: 6/2/2025, 12:00:06 PM, Teams: Milwaukee Brewers Cincinnati Reds, Gametime: 2025-06-02T23:11:00.000Z, Spread: -1.5, SpreadOdds: +162, Moneyline: +100, O/U: O 9, O/U Odds: -112
+MLB, Timestamp: 6/2/2025, 12:00:06 PM, Teams: Los Angeles Angels Boston Red Sox, Gametime: 2025-06-02T23:11:00.000Z, Spread: +1.5, SpreadOdds: -160, Moneyline: +124, O/U: O 9.5, O/U Odds: -115
+MLB, Timestamp: 6/2/2025, 12:00:06 PM, Teams: Detroit Tigers Chicago White Sox, Gametime: 2025-06-02T23:41:00.000Z, Spread: -1.5, SpreadOdds: -137, Moneyline: -215, O/U: O 8.5, O/U Odds: +102
+MLB, Timestamp: 6/2/2025, 12:00:06 PM, Teams: San Diego Padres San Francisco Giants, Gametime: 2025-06-03T01:46:00.000Z, Spread: +1.5, SpreadOdds: -146, Moneyline: +146, O/U: O 7.5, O/U Odds: -102
+MLB, Timestamp: 6/2/2025, 12:00:06 PM, Teams: Minnesota Twins Athletics, Gametime: 2025-06-03T02:06:00.000Z, Spread: -1.5, SpreadOdds: +100, Moneyline: -162, O/U: O 9.5, O/U Odds: +100
+MLB, Timestamp: 6/2/2025, 12:00:06 PM, Teams: New York Mets Los Angeles Dodgers, Gametime: 2025-06-03T02:11:00.000Z, Spread: +1.5, SpreadOdds: -146, Moneyline: +134, O/U: O 9, O/U Odds: -122
+
+NBA, Timestamp: 6/2/2025, 12:02:01 PM, Teams: Indiana Pacers Oklahoma City Thunder, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9, SpreadOdds: -106, Moneyline: +320, O/U: O 230.5, O/U Odds: -112
+
+MLB, Timestamp: 6/2/2025, 12:02:01 PM, Teams: Colorado Rockies Miami Marlins, Gametime: 2025-06-02T22:41:00.000Z, Spread: +1.5, SpreadOdds: -130, Moneyline: +166, O/U: O 8, O/U Odds: -114
+MLB, Timestamp: 6/2/2025, 12:02:01 PM, Teams: Milwaukee Brewers Cincinnati Reds, Gametime: 2025-06-02T23:11:00.000Z, Spread: -1.5, SpreadOdds: +162, Moneyline: +100, O/U: O 9, O/U Odds: -112
+MLB, Timestamp: 6/2/2025, 12:02:01 PM, Teams: Los Angeles Angels Boston Red Sox, Gametime: 2025-06-02T23:11:00.000Z, Spread: +1.5, SpreadOdds: -160, Moneyline: +124, O/U: O 9.5, O/U Odds: -115
+MLB, Timestamp: 6/2/2025, 12:02:01 PM, Teams: Detroit Tigers Chicago White Sox, Gametime: 2025-06-02T23:41:00.000Z, Spread: -1.5, SpreadOdds: -137, Moneyline: -215, O/U: O 8.5, O/U Odds: +102
+MLB, Timestamp: 6/2/2025, 12:02:01 PM, Teams: San Diego Padres San Francisco Giants, Gametime: 2025-06-03T01:46:00.000Z, Spread: +1.5, SpreadOdds: -146, Moneyline: +146, O/U: O 7.5, O/U Odds: -102
+MLB, Timestamp: 6/2/2025, 12:02:01 PM, Teams: Minnesota Twins Athletics, Gametime: 2025-06-03T02:06:00.000Z, Spread: -1.5, SpreadOdds: +100, Moneyline: -162, O/U: O 9.5, O/U Odds: +100
+MLB, Timestamp: 6/2/2025, 12:02:01 PM, Teams: New York Mets Los Angeles Dodgers, Gametime: 2025-06-03T02:11:00.000Z, Spread: +1.5, SpreadOdds: -146, Moneyline: +134, O/U: O 9, O/U Odds: -122
+
+NHL, Timestamp: 6/2/2025, 12:02:02 PM, Teams: Florida Panthers Edmonton Oilers, Gametime: 2025-06-05T00:00:06.000Z, Spread: +1.5, SpreadOdds: -230, Moneyline: +110, O/U: O 6.5, O/U Odds: +110
