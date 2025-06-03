@@ -21,7 +21,7 @@ function csvJSON(csv) {
 
 // Read CSV, convert, and write JSON
 const inputPath = path.join(__dirname, '..', 'data', 'sorteddata.csv');
-const outputPath = path.join(__dirname, '..', 'data', 'data.json');
+const outputPath = path.join(__dirname, '..', 'frontend', 'the-line-over-time', 'public', 'sortedbutjson.json');
 
 const csv = fs.readFileSync(inputPath, 'utf8');
 const json = csvJSON(csv);

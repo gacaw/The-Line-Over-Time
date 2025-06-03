@@ -1,35 +1,85 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function LeagueSelector() {
+  const leagues = ["MLB", "NBA", "NHL"];
+  const navigate = useNavigate();
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div>
+      <h2>Select a League</h2>
+      {leagues.map(league => (
+        <button key={league} onClick={() => navigate(`/league/${league}`)}>
+          {league}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      ))}
+    </div>
+  );
 }
 
-export default App
+function GameList({ league }) {
+  const [games, setGames] = useState([]);
+  const navigate = useNavigate();
+  useEffect(() => {
+    fetch("/sortedbutjson.json")
+      .then(res => res.json())
+      .then(data => setGames(data.filter(game => game.League === league)));
+  }, [league]);
+  return (
+    <div>
+      <h2>{league} Games</h2>
+      {games.map((game, idx) => (
+        <button
+          key={idx}
+          style={{ display: "block", margin: "8px 0" }}
+          onClick={() => navigate(`/league/${league}/game/${idx}`)}
+        >
+          {game.Teams}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function GameDetail() {
+  const { league, gameIdx } = useParams();
+  const [game, setGame] = useState(null);
+
+  useEffect(() => {
+    fetch("/sortedbutjson.json")
+      .then(res => res.json())
+      .then(data => {
+        const games = data.filter(g => g.League === league);
+        setGame(games[gameIdx]);
+      });
+  }, [league, gameIdx]);
+
+  if (!game) return <div>Loading...</div>;
+
+  return (
+    <div>
+      <h2>{game.Teams}</h2>
+      <pre>{game.History}</pre>
+      {/* graph spot */}
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LeagueSelector />} />
+        <Route path="/league/:league" element={<LeaguePage />} />
+        <Route path="/league/:league/game/:gameIdx" element={<GameDetail />} />
+        {/* add game stuff later */}
+      </Routes>
+    </Router>
+  );
+}
+
+function LeaguePage() {
+  const { league } = useParams();
+  return <GameList league={league} />;
+}
+
+export default App;
