@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import GameChart from './GameCharts';
 
 function LeagueSelector() {
   const leagues = ["MLB", "NBA", "NHL"];
@@ -40,6 +41,16 @@ function GameList({ league }) {
   );
 }
 
+function parseHistory(historyStr) {
+  return historyStr.split(";").filter(Boolean).map(entry => {
+    const timeMatch = entry.match(/\[(.*?)\]/);
+    const time = timeMatch ? timeMatch[1] : "";
+    const moneyline = Number(entry.match(/Moneyline: ([+-]?\d+)/)?.[1]);
+    // add rest of features 
+    return { time, moneyline };
+  });
+}
+
 function GameDetail() {
   const { league, gameIdx } = useParams();
   const [game, setGame] = useState(null);
@@ -55,11 +66,13 @@ function GameDetail() {
 
   if (!game) return <div>Loading...</div>;
 
+  const chartData = parseHistory(game.History);
+
   return (
     <div>
       <h2>{game.Teams}</h2>
+      <GameChart data={chartData} />
       <pre>{game.History}</pre>
-      {/* graph spot */}
     </div>
   );
 }
@@ -71,7 +84,6 @@ function App() {
         <Route path="/" element={<LeagueSelector />} />
         <Route path="/league/:league" element={<LeaguePage />} />
         <Route path="/league/:league/game/:gameIdx" element={<GameDetail />} />
-        {/* add game stuff later */}
       </Routes>
     </Router>
   );

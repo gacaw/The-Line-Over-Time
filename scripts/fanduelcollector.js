@@ -3,15 +3,19 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-function runScript(scriptName) {
+function runScript(scriptName, command = "node") {
     const now = new Date().toLocaleString();
     console.log(`[${now}] Running ${scriptName}...`);
-    exec(`node ${scriptName}`, { cwd: __dirname }, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`[${now}] Error running ${scriptName}:`, error);
-        }
-        if (stdout) console.log(`[${now}] ${scriptName} output:\n${stdout}`);
-        if (stderr) console.error(`[${now}] ${scriptName} error:\n${stderr}`);
+    return new Promise((resolve, reject) => {
+        exec(`${command} ${scriptName}`, { cwd: __dirname }, (error, stdout, stderr) => {
+            if (error) {
+                console.error(`[${now}] Error running ${scriptName}:`, error);
+                reject(error);
+            }
+            if (stdout) console.log(`[${now}] ${scriptName} output:\n${stdout}`);
+            if (stderr) console.error(`[${now}] ${scriptName} error:\n${stderr}`);
+            resolve();
+        });
     });
 }
 
@@ -24,10 +28,16 @@ function msUntilNext5() {
     return next - now;
 }
 
-function runAllScripts() {
-    runScript("puppeteerMLB.js");
-    runScript("puppeteerNBA.js");
-    runScript("puppeteerNHL.js");
+async function runAllScripts() {
+    try {
+        await runScript("puppeteerMLB.js");
+        await runScript("puppeteerNBA.js");
+        await runScript("puppeteerNHL.js");
+        //await runScript("datasort.py", "python");
+        //await runScript("csvtojson.cjs", "node");  need to fix this file
+    } catch (err) {
+        console.error("Error in script chain:", err);
+    }
 }
 
 runAllScripts();
