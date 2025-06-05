@@ -1,6 +1,6 @@
 import csv
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 
 INPUT = '../data/linedata.csv'
 OUTPUT = '../data/sorteddata.csv'
@@ -33,7 +33,6 @@ def parse_line(line):
     }
 
 def parse_game_time(game_time):
-    from datetime import timezone
     try:
         if game_time and game_time != "N/A":
             dt = datetime.fromisoformat(game_time.replace("Z", "+00:00"))
@@ -42,7 +41,7 @@ def parse_game_time(game_time):
             return dt
     except Exception:
         pass
-    return datetime.min.replace(tzinfo=datetime.timezone.utc)
+    return datetime.min.replace(tzinfo=timezone.utc)
 
 games = {}
 

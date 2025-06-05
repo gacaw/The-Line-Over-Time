@@ -34,7 +34,7 @@ function GameList({ league }) {
           style={{ display: "block", margin: "8px 0" }}
           onClick={() => navigate(`/league/${league}/game/${idx}`)}
         >
-          {game.Teams}
+          {game.Teams} — {new Date(game.GameTime).toLocaleString()}
         </button>
       ))}
     </div>
@@ -45,11 +45,22 @@ function parseHistory(historyStr) {
   return historyStr.split(";").filter(Boolean).map(entry => {
     const timeMatch = entry.match(/\[(.*?)\]/);
     const time = timeMatch ? timeMatch[1] : "";
-    const moneyline = Number(entry.match(/Moneyline: ([+-]?\d+)/)?.[1]);
-    // add rest of features 
-    return { time, moneyline };
+    const moneyline = Number(entry.match(/Moneyline: ([+-]?\d+|N\/A)/)?.[1]);
+    const spread = entry.match(/Spread: ([+-]?\d+(\.\d+)?|N\/A)/)?.[1];
+    const spreadOdds = Number(entry.match(/SpreadOdds: ([+-]?\d+|N\/A)/)?.[1]);
+    const total = entry.match(/Total: O ([+-]?\d+(\.\d+)?|N\/A)/)?.[1];
+    const totalOdds = Number(entry.match(/TotalOdds: ([+-]?\d+|N\/A)/)?.[1]);
+    return {
+      time,
+      moneyline: isNaN(moneyline) ? null : moneyline,
+      spread: spread === "N/A" ? null : Number(spread),
+      spreadOdds: isNaN(spreadOdds) ? null : spreadOdds,
+      total: total === "N/A" ? null : Number(total),
+      totalOdds: isNaN(totalOdds) ? null : totalOdds,
+    };
   });
 }
+
 
 function GameDetail() {
   const { league, gameIdx } = useParams();
