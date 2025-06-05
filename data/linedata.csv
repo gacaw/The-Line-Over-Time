@@ -137,12 +137,8 @@ MLB, Timestamp: 6/3/2025, 1:41:59 PM, Teams: Baltimore Orioles Seattle Mariners,
 MLB, Timestamp: 6/3/2025, 1:41:59 PM, Teams: New York Mets Los Angeles Dodgers, Gametime: 2025-06-05T02:11:00.000Z, Spread: +1.5, SpreadOdds: -178, Moneyline: +118, O/U: O 9.5, O/U Odds: +102
 
 NHL, Timestamp: 6/3/2025, 3:18:27 PM, Teams: Florida Panthers Edmonton Oilers, Gametime: 2025-06-05T00:00:06.000Z, Spread: +1.5, SpreadOdds: -230, Moneyline: +110, O/U: O 6.5, O/U Odds: +110
-NHL, Timestamp: 6/3/2025, 3:18:27 PM, Teams: More Wagers, Gametime: 2025-06-05T00:00:06.000Z, Spread: +1.5, SpreadOdds: -230, Moneyline: +110, O/U: O 6.5, O/U Odds: +110
-NHL, Timestamp: 6/3/2025, 3:18:27 PM, Teams: More Wagers, Gametime: 2025-06-05T00:00:06.000Z, Spread: +1.5, SpreadOdds: -230, Moneyline: +110, O/U: O 6.5, O/U Odds: +110
 
 NBA, Timestamp: 6/3/2025, 3:18:27 PM, Teams: Indiana Pacers Oklahoma City Thunder, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9, SpreadOdds: -106, Moneyline: +330, O/U: O 231.5, O/U Odds: -108
-NBA, Timestamp: 6/3/2025, 3:18:27 PM, Teams: More Wagers, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9, SpreadOdds: -106, Moneyline: +330, O/U: O 231.5, O/U Odds: -108
-NBA, Timestamp: 6/3/2025, 3:18:27 PM, Teams: More Wagers, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9, SpreadOdds: -106, Moneyline: +330, O/U: O 231.5, O/U Odds: -108
 
 MLB, Timestamp: 6/3/2025, 3:18:28 PM, Teams: Colorado Rockies Miami Marlins, Gametime: 2025-06-03T22:41:00.000Z, Spread: +1.5, SpreadOdds: -142, Moneyline: +146, O/U: O 8.5, O/U Odds: -102
 MLB, Timestamp: 6/3/2025, 3:18:28 PM, Teams: Houston Astros Pittsburgh Pirates, Gametime: 2025-06-03T22:41:00.000Z, Spread: +1.5, SpreadOdds: -160, Moneyline: +134, O/U: O 7, O/U Odds: -106
@@ -172,12 +168,8 @@ MLB, Timestamp: 6/3/2025, 3:18:28 PM, Teams: San Diego Padres San Francisco Gian
 MLB, Timestamp: 6/3/2025, 3:18:28 PM, Teams: New York Mets Los Angeles Dodgers, Gametime: 2025-06-05T02:11:00.000Z, Spread: +1.5, SpreadOdds: -170, Moneyline: +122, O/U: O 9.5, O/U Odds: -102
 
 NHL, Timestamp: 6/3/2025, 3:25:13 PM, Teams: Florida Panthers Edmonton Oilers, Gametime: 2025-06-05T00:00:06.000Z, Spread: +1.5, SpreadOdds: -230, Moneyline: +110, O/U: O 6.5, O/U Odds: +110
-NHL, Timestamp: 6/3/2025, 3:25:13 PM, Teams: More Wagers, Gametime: 2025-06-05T00:00:06.000Z, Spread: +1.5, SpreadOdds: -230, Moneyline: +110, O/U: O 6.5, O/U Odds: +110
-NHL, Timestamp: 6/3/2025, 3:25:13 PM, Teams: More Wagers, Gametime: 2025-06-05T00:00:06.000Z, Spread: +1.5, SpreadOdds: -230, Moneyline: +110, O/U: O 6.5, O/U Odds: +110
 
 NBA, Timestamp: 6/3/2025, 3:25:13 PM, Teams: Indiana Pacers Oklahoma City Thunder, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9, SpreadOdds: -106, Moneyline: +330, O/U: O 231.5, O/U Odds: -108
-NBA, Timestamp: 6/3/2025, 3:25:13 PM, Teams: More Wagers, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9, SpreadOdds: -106, Moneyline: +330, O/U: O 231.5, O/U Odds: -108
-NBA, Timestamp: 6/3/2025, 3:25:13 PM, Teams: More Wagers, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9, SpreadOdds: -106, Moneyline: +330, O/U: O 231.5, O/U Odds: -108
 
 MLB, Timestamp: 6/3/2025, 3:25:14 PM, Teams: Colorado Rockies Miami Marlins, Gametime: 2025-06-03T22:41:00.000Z, Spread: +1.5, SpreadOdds: -142, Moneyline: +146, O/U: O 8.5, O/U Odds: -102
 MLB, Timestamp: 6/3/2025, 3:25:14 PM, Teams: Houston Astros Pittsburgh Pirates, Gametime: 2025-06-03T22:41:00.000Z, Spread: +1.5, SpreadOdds: -160, Moneyline: +134, O/U: O 7, O/U Odds: -106
@@ -321,3 +313,72 @@ MLB, Timestamp: 6/5/2025, 5:10:50 PM, Teams: Atlanta Braves San Francisco Giants
 NBA, Timestamp: 6/5/2025, 5:10:50 PM, Teams: Indiana Pacers Oklahoma City Thunder, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9.5, SpreadOdds: -106, Moneyline: +360, O/U: O 230, O/U Odds: -110
 
 NHL, Timestamp: 6/5/2025, 5:10:50 PM, Teams: Florida Panthers Edmonton Oilers, Gametime: 2025-06-07T00:00:00.000Z, Spread: +1.5, SpreadOdds: -245, Moneyline: +104, O/U: O 6.5, O/U Odds: +106
+
+NHL, Timestamp: 6/5/2025, 5:15:05 PM, Teams: Florida Panthers Edmonton Oilers, Gametime: 2025-06-07T00:00:00.000Z, Spread: +1.5, SpreadOdds: -245, Moneyline: +104, O/U: O 6.5, O/U Odds: +106
+
+NBA, Timestamp: 6/5/2025, 5:15:06 PM, Teams: Indiana Pacers Oklahoma City Thunder, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9.5, SpreadOdds: -106, Moneyline: +360, O/U: O 230, O/U Odds: -110
+
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Philadelphia Phillies Toronto Blue Jays, Gametime: N/A, Spread: +7.5, SpreadOdds: +116, Moneyline: N/A, O/U: O 11.5, O/U Odds: +110
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Minnesota Twins Athletics, Gametime: N/A, Spread: N/A, SpreadOdds: N/A, Moneyline: N/A, O/U: N/A, O/U Odds: N/A
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Baltimore Orioles Seattle Mariners, Gametime: N/A, Spread: -1.5, SpreadOdds: +172, Moneyline: -194, O/U: O 9.5, O/U Odds: -146
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: San Diego Padres San Francisco Giants, Gametime: N/A, Spread: +1.5, SpreadOdds: -250, Moneyline: +180, O/U: O 7.5, O/U Odds: -138
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: New York Mets Los Angeles Dodgers, Gametime: N/A, Spread: -1.5, SpreadOdds: +126, Moneyline: -146, O/U: O 13.5, O/U Odds: -102
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Houston Astros Pittsburgh Pirates, Gametime: 2025-06-05T22:41:00.000Z, Spread: -1.5, SpreadOdds: +114, Moneyline: -144, O/U: O 7.5, O/U Odds: -106
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Chicago Cubs Washington Nationals, Gametime: 2025-06-05T22:46:00.000Z, Spread: -1.5, SpreadOdds: +104, Moneyline: -152, O/U: O 9.5, O/U Odds: -122
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Cleveland Guardians New York Yankees, Gametime: 2025-06-05T23:06:00.000Z, Spread: +1.5, SpreadOdds: +112, Moneyline: +220, O/U: O 8.5, O/U Odds: -104
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Texas Rangers Tampa Bay Rays, Gametime: 2025-06-05T23:36:00.000Z, Spread: +1.5, SpreadOdds: -162, Moneyline: +120, O/U: O 9, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Kansas City Royals St. Louis Cardinals, Gametime: 2025-06-05T23:46:00.000Z, Spread: -1.5, SpreadOdds: +168, Moneyline: +100, O/U: O 7, O/U Odds: -114
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Texas Rangers Washington Nationals, Gametime: 2025-06-06T22:46:00.000Z, Spread: -1.5, SpreadOdds: +118, Moneyline: -136, O/U: O 9.5, O/U Odds: -115
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Boston Red Sox New York Yankees, Gametime: 2025-06-06T23:06:00.000Z, Spread: +1.5, SpreadOdds: -138, Moneyline: +140, O/U: O 9, O/U Odds: -105
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Houston Astros Cleveland Guardians, Gametime: 2025-06-06T23:11:00.000Z, Spread: -1.5, SpreadOdds: +172, Moneyline: +100, O/U: O 8.5, O/U Odds: +102
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Kansas City Royals Chicago White Sox, Gametime: 2025-06-06T23:41:00.000Z, Spread: -1.5, SpreadOdds: -110, Moneyline: -180, O/U: O 8.5, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: San Diego Padres Milwaukee Brewers, Gametime: 2025-06-07T00:11:00.000Z, Spread: +1.5, SpreadOdds: -170, Moneyline: +126, O/U: O 8.5, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: New York Mets Colorado Rockies, Gametime: 2025-06-07T00:41:00.000Z, Spread: -1.5, SpreadOdds: -205, Moneyline: -330, O/U: O 10.5, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Seattle Mariners Los Angeles Angels, Gametime: 2025-06-07T01:39:00.000Z, Spread: -1.5, SpreadOdds: +114, Moneyline: -146, O/U: O 9, O/U Odds: -122
+MLB, Timestamp: 6/5/2025, 5:15:07 PM, Teams: Atlanta Braves San Francisco Giants, Gametime: 2025-06-07T02:16:00.000Z, Spread: -1.5, SpreadOdds: +128, Moneyline: -136, O/U: O 7.5, O/U Odds: +100
+
+NBA, Timestamp: 6/5/2025, 5:20:06 PM, Teams: Indiana Pacers Oklahoma City Thunder, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9.5, SpreadOdds: -106, Moneyline: +360, O/U: O 230, O/U Odds: -110
+
+NHL, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Florida Panthers Edmonton Oilers, Gametime: 2025-06-07T00:00:00.000Z, Spread: +1.5, SpreadOdds: -245, Moneyline: +104, O/U: O 6.5, O/U Odds: +106
+
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Philadelphia Phillies Toronto Blue Jays, Gametime: N/A, Spread: +8.5, SpreadOdds: -400, Moneyline: N/A, O/U: O 10.5, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Minnesota Twins Athletics, Gametime: N/A, Spread: +10.5, SpreadOdds: +116, Moneyline: N/A, O/U: O 15.5, O/U Odds: -140
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Baltimore Orioles Seattle Mariners, Gametime: N/A, Spread: -1.5, SpreadOdds: +152, Moneyline: -265, O/U: O 9.5, O/U Odds: -106
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: San Diego Padres San Francisco Giants, Gametime: N/A, Spread: +1.5, SpreadOdds: -205, Moneyline: +255, O/U: O 7.5, O/U Odds: -102
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: New York Mets Los Angeles Dodgers, Gametime: N/A, Spread: -1.5, SpreadOdds: -114, Moneyline: -200, O/U: O 13.5, O/U Odds: -132
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Houston Astros Pittsburgh Pirates, Gametime: 2025-06-05T22:41:00.000Z, Spread: -1.5, SpreadOdds: +115, Moneyline: -144, O/U: O 7.5, O/U Odds: -106
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Chicago Cubs Washington Nationals, Gametime: 2025-06-05T22:46:00.000Z, Spread: -1.5, SpreadOdds: +104, Moneyline: -152, O/U: O 9.5, O/U Odds: -122
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Cleveland Guardians New York Yankees, Gametime: 2025-06-05T23:06:00.000Z, Spread: +1.5, SpreadOdds: +112, Moneyline: +220, O/U: O 8.5, O/U Odds: -104
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Texas Rangers Tampa Bay Rays, Gametime: 2025-06-05T23:36:00.000Z, Spread: +1.5, SpreadOdds: -162, Moneyline: +120, O/U: O 9, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Kansas City Royals St. Louis Cardinals, Gametime: 2025-06-05T23:46:00.000Z, Spread: -1.5, SpreadOdds: +168, Moneyline: +100, O/U: O 7, O/U Odds: -114
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Texas Rangers Washington Nationals, Gametime: 2025-06-06T22:46:00.000Z, Spread: -1.5, SpreadOdds: +118, Moneyline: -136, O/U: O 9.5, O/U Odds: -115
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Boston Red Sox New York Yankees, Gametime: 2025-06-06T23:06:00.000Z, Spread: +1.5, SpreadOdds: -138, Moneyline: +140, O/U: O 9, O/U Odds: -105
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Houston Astros Cleveland Guardians, Gametime: 2025-06-06T23:11:00.000Z, Spread: -1.5, SpreadOdds: +172, Moneyline: +100, O/U: O 8.5, O/U Odds: +102
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Kansas City Royals Chicago White Sox, Gametime: 2025-06-06T23:41:00.000Z, Spread: -1.5, SpreadOdds: -110, Moneyline: -180, O/U: O 8.5, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: San Diego Padres Milwaukee Brewers, Gametime: 2025-06-07T00:11:00.000Z, Spread: +1.5, SpreadOdds: -170, Moneyline: +126, O/U: O 8.5, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: New York Mets Colorado Rockies, Gametime: 2025-06-07T00:41:00.000Z, Spread: -1.5, SpreadOdds: -205, Moneyline: -330, O/U: O 10.5, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Seattle Mariners Los Angeles Angels, Gametime: 2025-06-07T01:39:00.000Z, Spread: -1.5, SpreadOdds: +114, Moneyline: -146, O/U: O 9, O/U Odds: -122
+MLB, Timestamp: 6/5/2025, 5:20:07 PM, Teams: Atlanta Braves San Francisco Giants, Gametime: 2025-06-07T02:16:00.000Z, Spread: -1.5, SpreadOdds: +128, Moneyline: -136, O/U: O 7.5, O/U Odds: +100
+
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Philadelphia Phillies Toronto Blue Jays, Gametime: N/A, Spread: N/A, SpreadOdds: N/A, Moneyline: N/A, O/U: N/A, O/U Odds: N/A
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Minnesota Twins Athletics, Gametime: N/A, Spread: N/A, SpreadOdds: N/A, Moneyline: N/A, O/U: N/A, O/U Odds: N/A
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Baltimore Orioles Seattle Mariners, Gametime: N/A, Spread: -1.5, SpreadOdds: +200, Moneyline: -225, O/U: O 9.5, O/U Odds: +116
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: San Diego Padres San Francisco Giants, Gametime: N/A, Spread: +1.5, SpreadOdds: -205, Moneyline: +290, O/U: O 7.5, O/U Odds: +114
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: New York Mets Los Angeles Dodgers, Gametime: N/A, Spread: N/A, SpreadOdds: N/A, Moneyline: N/A, O/U: N/A, O/U Odds: N/A
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Houston Astros Pittsburgh Pirates, Gametime: 2025-06-05T22:41:00.000Z, Spread: -1.5, SpreadOdds: +115, Moneyline: -144, O/U: O 7.5, O/U Odds: -106
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Chicago Cubs Washington Nationals, Gametime: 2025-06-05T22:46:00.000Z, Spread: -1.5, SpreadOdds: +104, Moneyline: -152, O/U: O 9.5, O/U Odds: -122
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Cleveland Guardians New York Yankees, Gametime: 2025-06-05T23:06:00.000Z, Spread: +1.5, SpreadOdds: +112, Moneyline: +220, O/U: O 8.5, O/U Odds: -104
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Texas Rangers Tampa Bay Rays, Gametime: 2025-06-05T23:36:00.000Z, Spread: +1.5, SpreadOdds: -162, Moneyline: +120, O/U: O 9, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Kansas City Royals St. Louis Cardinals, Gametime: 2025-06-05T23:46:00.000Z, Spread: -1.5, SpreadOdds: +168, Moneyline: +100, O/U: O 7, O/U Odds: -114
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Texas Rangers Washington Nationals, Gametime: 2025-06-06T22:46:00.000Z, Spread: -1.5, SpreadOdds: +118, Moneyline: -136, O/U: O 9.5, O/U Odds: -115
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Boston Red Sox New York Yankees, Gametime: 2025-06-06T23:06:00.000Z, Spread: +1.5, SpreadOdds: -138, Moneyline: +140, O/U: O 9, O/U Odds: -105
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Houston Astros Cleveland Guardians, Gametime: 2025-06-06T23:11:00.000Z, Spread: -1.5, SpreadOdds: +172, Moneyline: +100, O/U: O 8.5, O/U Odds: +102
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Kansas City Royals Chicago White Sox, Gametime: 2025-06-06T23:41:00.000Z, Spread: -1.5, SpreadOdds: -110, Moneyline: -180, O/U: O 8.5, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: San Diego Padres Milwaukee Brewers, Gametime: 2025-06-07T00:11:00.000Z, Spread: +1.5, SpreadOdds: -170, Moneyline: +126, O/U: O 8.5, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: New York Mets Colorado Rockies, Gametime: 2025-06-07T00:41:00.000Z, Spread: -1.5, SpreadOdds: -205, Moneyline: -330, O/U: O 10.5, O/U Odds: +100
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Seattle Mariners Los Angeles Angels, Gametime: 2025-06-07T01:39:00.000Z, Spread: -1.5, SpreadOdds: +114, Moneyline: -146, O/U: O 9, O/U Odds: -122
+MLB, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Atlanta Braves San Francisco Giants, Gametime: 2025-06-07T02:16:00.000Z, Spread: -1.5, SpreadOdds: +128, Moneyline: -136, O/U: O 7.5, O/U Odds: +100
+
+NBA, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Indiana Pacers Oklahoma City Thunder, Gametime: 2025-06-06T00:30:00.000Z, Spread: +9.5, SpreadOdds: -106, Moneyline: +360, O/U: O 230, O/U Odds: -110
+
+NHL, Timestamp: 6/5/2025, 5:25:06 PM, Teams: Florida Panthers Edmonton Oilers, Gametime: 2025-06-07T00:00:00.000Z, Spread: +1.5, SpreadOdds: -245, Moneyline: +104, O/U: O 6.5, O/U Odds: +106
