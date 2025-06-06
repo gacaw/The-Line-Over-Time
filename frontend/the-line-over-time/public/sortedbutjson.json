@@ -271,57 +271,183 @@
   },
   {
     "League": "MLB",
+    "GameTime": "2025-06-06T22:41:00.000Z",
+    "Teams": "Philadelphia Phillies Pittsburgh Pirates",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -134 | Spread: -1.5 | SpreadOdds: +120 | Total: O 9 | TotalOdds: +100; [6/6/2025 4:55:08 PM] Moneyline: -134 | Spread: -1.5 | SpreadOdds: +120 | Total: O 9 | TotalOdds: +100; [6/6/2025 5:00:08 PM] Moneyline: -134 | Spread: -1.5 | SpreadOdds: +120 | Total: O 9 | TotalOdds: +100;"
+  },
+  {
+    "League": "MLB",
     "GameTime": "2025-06-06T22:46:00.000Z",
     "Teams": "Texas Rangers Washington Nationals",
-    "History": "[6/5/2025 4:33:53 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +122 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 4:35:33 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 5:07:23 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 5:10:50 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 5:15:07 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 5:20:07 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 5:25:06 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115;"
+    "History": "[6/5/2025 4:33:53 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +122 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 4:35:33 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 5:07:23 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 5:10:50 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 5:15:07 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 5:20:07 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/5/2025 5:25:06 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +118 | Total: O 9.5 | TotalOdds: -115; [6/6/2025 4:49:26 PM] Moneyline: -122 | Spread: -1.5 | SpreadOdds: +130 | Total: O 9 | TotalOdds: -112; [6/6/2025 4:55:08 PM] Moneyline: -118 | Spread: -1.5 | SpreadOdds: +134 | Total: O 9 | TotalOdds: -112; [6/6/2025 5:00:08 PM] Moneyline: -118 | Spread: -1.5 | SpreadOdds: +134 | Total: O 9 | TotalOdds: -112;"
   },
   {
     "League": "MLB",
     "GameTime": "2025-06-06T23:06:00.000Z",
     "Teams": "Boston Red Sox New York Yankees",
-    "History": "[6/5/2025 4:33:53 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -142 | Total: O 9 | TotalOdds: -105; [6/5/2025 4:35:33 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/5/2025 5:07:23 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/5/2025 5:10:50 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/5/2025 5:15:07 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/5/2025 5:20:07 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/5/2025 5:25:06 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105;"
+    "History": "[6/5/2025 4:33:53 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -142 | Total: O 9 | TotalOdds: -105; [6/5/2025 4:35:33 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/5/2025 5:07:23 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/5/2025 5:10:50 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/5/2025 5:15:07 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/5/2025 5:20:07 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/5/2025 5:25:06 PM] Moneyline: +140 | Spread: +1.5 | SpreadOdds: -138 | Total: O 9 | TotalOdds: -105; [6/6/2025 4:49:26 PM] Moneyline: +166 | Spread: +1.5 | SpreadOdds: -120 | Total: O 9 | TotalOdds: -102; [6/6/2025 4:55:08 PM] Moneyline: +166 | Spread: +1.5 | SpreadOdds: -120 | Total: O 9 | TotalOdds: -102; [6/6/2025 5:00:08 PM] Moneyline: +166 | Spread: +1.5 | SpreadOdds: -120 | Total: O 9 | TotalOdds: -102;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-06T23:11:00.000Z",
+    "Teams": "Arizona Diamondbacks Cincinnati Reds",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -116 | Spread: -1.5 | SpreadOdds: +130 | Total: O 9.5 | TotalOdds: -102; [6/6/2025 4:55:08 PM] Moneyline: -116 | Spread: -1.5 | SpreadOdds: +130 | Total: O 9.5 | TotalOdds: -102; [6/6/2025 5:00:08 PM] Moneyline: -116 | Spread: -1.5 | SpreadOdds: +130 | Total: O 9.5 | TotalOdds: -102;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-06T23:11:00.000Z",
+    "Teams": "Chicago Cubs Detroit Tigers",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: +166 | Spread: +1.5 | SpreadOdds: -137 | Total: O 7 | TotalOdds: -108; [6/6/2025 4:55:08 PM] Moneyline: +166 | Spread: +1.5 | SpreadOdds: -137 | Total: O 7 | TotalOdds: -108; [6/6/2025 5:00:08 PM] Moneyline: +166 | Spread: +1.5 | SpreadOdds: -137 | Total: O 7 | TotalOdds: -108;"
   },
   {
     "League": "MLB",
     "GameTime": "2025-06-06T23:11:00.000Z",
     "Teams": "Houston Astros Cleveland Guardians",
-    "History": "[6/5/2025 4:33:53 PM] Moneyline: +100 | Spread: +1.5 | SpreadOdds: -205 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 4:35:33 PM] Moneyline: +100 | Spread: +1.5 | SpreadOdds: -205 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 5:07:23 PM] Moneyline: +100 | Spread: -1.5 | SpreadOdds: +172 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 5:10:50 PM] Moneyline: +100 | Spread: -1.5 | SpreadOdds: +172 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 5:15:07 PM] Moneyline: +100 | Spread: -1.5 | SpreadOdds: +172 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 5:20:07 PM] Moneyline: +100 | Spread: -1.5 | SpreadOdds: +172 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 5:25:06 PM] Moneyline: +100 | Spread: -1.5 | SpreadOdds: +172 | Total: O 8.5 | TotalOdds: +102;"
+    "History": "[6/5/2025 4:33:53 PM] Moneyline: +100 | Spread: +1.5 | SpreadOdds: -205 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 4:35:33 PM] Moneyline: +100 | Spread: +1.5 | SpreadOdds: -205 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 5:07:23 PM] Moneyline: +100 | Spread: -1.5 | SpreadOdds: +172 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 5:10:50 PM] Moneyline: +100 | Spread: -1.5 | SpreadOdds: +172 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 5:15:07 PM] Moneyline: +100 | Spread: -1.5 | SpreadOdds: +172 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 5:20:07 PM] Moneyline: +100 | Spread: -1.5 | SpreadOdds: +172 | Total: O 8.5 | TotalOdds: +102; [6/5/2025 5:25:06 PM] Moneyline: +100 | Spread: -1.5 | SpreadOdds: +172 | Total: O 8.5 | TotalOdds: +102; [6/6/2025 4:49:26 PM] Moneyline: -126 | Spread: -1.5 | SpreadOdds: +130 | Total: O 8.5 | TotalOdds: +100; [6/6/2025 4:55:08 PM] Moneyline: -126 | Spread: -1.5 | SpreadOdds: +130 | Total: O 8.5 | TotalOdds: +100; [6/6/2025 5:00:08 PM] Moneyline: -126 | Spread: -1.5 | SpreadOdds: +132 | Total: O 8.5 | TotalOdds: +100;"
   },
   {
     "League": "MLB",
     "GameTime": "2025-06-06T23:41:00.000Z",
     "Teams": "Kansas City Royals Chicago White Sox",
-    "History": "[6/5/2025 4:33:53 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 4:35:33 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:07:23 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:10:50 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:15:07 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:20:07 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:25:06 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100;"
+    "History": "[6/5/2025 4:33:53 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 4:35:33 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:07:23 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:10:50 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:15:07 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:20:07 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:25:06 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: +100; [6/6/2025 4:49:26 PM] Moneyline: -138 | Spread: -1.5 | SpreadOdds: +120 | Total: O 8.5 | TotalOdds: +100; [6/6/2025 4:55:08 PM] Moneyline: -138 | Spread: -1.5 | SpreadOdds: +120 | Total: O 8.5 | TotalOdds: +100; [6/6/2025 5:00:08 PM] Moneyline: -138 | Spread: -1.5 | SpreadOdds: +120 | Total: O 8.5 | TotalOdds: +100;"
   },
   {
     "League": "MLB",
     "GameTime": "2025-06-07T00:11:00.000Z",
     "Teams": "San Diego Padres Milwaukee Brewers",
-    "History": "[6/5/2025 4:33:53 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -166 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 4:35:33 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -166 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:07:23 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -170 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:10:50 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -170 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:15:07 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -170 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:20:07 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -170 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:25:06 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -170 | Total: O 8.5 | TotalOdds: +100;"
+    "History": "[6/5/2025 4:33:53 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -166 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 4:35:33 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -166 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:07:23 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -170 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:10:50 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -170 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:15:07 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -170 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:20:07 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -170 | Total: O 8.5 | TotalOdds: +100; [6/5/2025 5:25:06 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -170 | Total: O 8.5 | TotalOdds: +100; [6/6/2025 4:49:26 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -164 | Total: O 8.5 | TotalOdds: -120; [6/6/2025 4:55:08 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -164 | Total: O 8.5 | TotalOdds: -120; [6/6/2025 5:00:08 PM] Moneyline: +126 | Spread: +1.5 | SpreadOdds: -164 | Total: O 8.5 | TotalOdds: -120;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T00:11:00.000Z",
+    "Teams": "Toronto Blue Jays Minnesota Twins",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: +120 | Spread: +1.5 | SpreadOdds: -172 | Total: O 8.5 | TotalOdds: -110; [6/6/2025 4:55:08 PM] Moneyline: +120 | Spread: +1.5 | SpreadOdds: -172 | Total: O 8.5 | TotalOdds: -110; [6/6/2025 5:00:08 PM] Moneyline: +120 | Spread: +1.5 | SpreadOdds: -172 | Total: O 8.5 | TotalOdds: -110;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T00:16:00.000Z",
+    "Teams": "Los Angeles Dodgers St. Louis Cardinals",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: +102 | Spread: -1.5 | SpreadOdds: +158 | Total: O 8.5 | TotalOdds: -105; [6/6/2025 4:55:08 PM] Moneyline: +102 | Spread: -1.5 | SpreadOdds: +158 | Total: O 8.5 | TotalOdds: -105; [6/6/2025 5:00:08 PM] Moneyline: +102 | Spread: -1.5 | SpreadOdds: +158 | Total: O 8.5 | TotalOdds: -105;"
   },
   {
     "League": "MLB",
     "GameTime": "2025-06-07T00:41:00.000Z",
     "Teams": "New York Mets Colorado Rockies",
-    "History": "[6/5/2025 4:33:53 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -196 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 4:35:33 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -196 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 5:07:23 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -205 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 5:10:50 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -205 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 5:15:07 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -205 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 5:20:07 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -205 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 5:25:06 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -205 | Total: O 10.5 | TotalOdds: +100;"
+    "History": "[6/5/2025 4:33:53 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -196 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 4:35:33 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -196 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 5:07:23 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -205 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 5:10:50 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -205 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 5:15:07 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -205 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 5:20:07 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -205 | Total: O 10.5 | TotalOdds: +100; [6/5/2025 5:25:06 PM] Moneyline: -330 | Spread: -1.5 | SpreadOdds: -205 | Total: O 10.5 | TotalOdds: +100; [6/6/2025 4:49:26 PM] Moneyline: -275 | Spread: -1.5 | SpreadOdds: -182 | Total: O 10.5 | TotalOdds: -115; [6/6/2025 4:55:08 PM] Moneyline: -275 | Spread: -1.5 | SpreadOdds: -182 | Total: O 10.5 | TotalOdds: -115; [6/6/2025 5:00:08 PM] Moneyline: -295 | Spread: -1.5 | SpreadOdds: -188 | Total: O 10.5 | TotalOdds: -115;"
   },
   {
     "League": "MLB",
     "GameTime": "2025-06-07T01:39:00.000Z",
     "Teams": "Seattle Mariners Los Angeles Angels",
-    "History": "[6/5/2025 4:33:53 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +116 | Total: O 9 | TotalOdds: -122; [6/5/2025 4:35:33 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +116 | Total: O 9 | TotalOdds: -122; [6/5/2025 5:07:23 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +114 | Total: O 9 | TotalOdds: -122; [6/5/2025 5:10:50 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +114 | Total: O 9 | TotalOdds: -122; [6/5/2025 5:15:07 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +114 | Total: O 9 | TotalOdds: -122; [6/5/2025 5:20:07 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +114 | Total: O 9 | TotalOdds: -122; [6/5/2025 5:25:06 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +114 | Total: O 9 | TotalOdds: -122;"
+    "History": "[6/5/2025 4:33:53 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +116 | Total: O 9 | TotalOdds: -122; [6/5/2025 4:35:33 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +116 | Total: O 9 | TotalOdds: -122; [6/5/2025 5:07:23 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +114 | Total: O 9 | TotalOdds: -122; [6/5/2025 5:10:50 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +114 | Total: O 9 | TotalOdds: -122; [6/5/2025 5:15:07 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +114 | Total: O 9 | TotalOdds: -122; [6/5/2025 5:20:07 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +114 | Total: O 9 | TotalOdds: -122; [6/5/2025 5:25:06 PM] Moneyline: -146 | Spread: -1.5 | SpreadOdds: +114 | Total: O 9 | TotalOdds: -122; [6/6/2025 4:49:26 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +116 | Total: O 9.5 | TotalOdds: -102; [6/6/2025 4:55:08 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +116 | Total: O 9.5 | TotalOdds: -102; [6/6/2025 5:00:08 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +116 | Total: O 9.5 | TotalOdds: -102;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T02:06:00.000Z",
+    "Teams": "Baltimore Orioles Athletics",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -130 | Spread: -1.5 | SpreadOdds: +118 | Total: O 10.5 | TotalOdds: -124; [6/6/2025 4:55:08 PM] Moneyline: -130 | Spread: -1.5 | SpreadOdds: +118 | Total: O 10.5 | TotalOdds: -124; [6/6/2025 5:00:08 PM] Moneyline: -130 | Spread: -1.5 | SpreadOdds: +118 | Total: O 10.5 | TotalOdds: -124;"
   },
   {
     "League": "MLB",
     "GameTime": "2025-06-07T02:16:00.000Z",
     "Teams": "Atlanta Braves San Francisco Giants",
-    "History": "[6/5/2025 4:33:53 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 4:35:33 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 5:07:23 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 5:10:50 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 5:15:07 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 5:20:07 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 5:25:06 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100;"
+    "History": "[6/5/2025 4:33:53 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 4:35:33 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 5:07:23 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 5:10:50 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 5:15:07 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 5:20:07 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/5/2025 5:25:06 PM] Moneyline: -136 | Spread: -1.5 | SpreadOdds: +128 | Total: O 7.5 | TotalOdds: +100; [6/6/2025 4:49:26 PM] Moneyline: -138 | Spread: -1.5 | SpreadOdds: +130 | Total: O 7.5 | TotalOdds: -102; [6/6/2025 4:55:08 PM] Moneyline: -138 | Spread: -1.5 | SpreadOdds: +130 | Total: O 7.5 | TotalOdds: -102; [6/6/2025 5:00:08 PM] Moneyline: -138 | Spread: -1.5 | SpreadOdds: +130 | Total: O 7.5 | TotalOdds: -102;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T17:11:00.000Z",
+    "Teams": "Chicago Cubs Detroit Tigers",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -104 | Spread: -1.5 | SpreadOdds: +152 | Total: O 8.5 | TotalOdds: -122; [6/6/2025 4:55:08 PM] Moneyline: -104 | Spread: -1.5 | SpreadOdds: +152 | Total: O 8.5 | TotalOdds: -122; [6/6/2025 5:00:08 PM] Moneyline: -104 | Spread: -1.5 | SpreadOdds: +152 | Total: O 8.5 | TotalOdds: -122;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T18:11:00.000Z",
+    "Teams": "Toronto Blue Jays Minnesota Twins",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -116 | Spread: -1.5 | SpreadOdds: +140 | Total: O 8 | TotalOdds: -115; [6/6/2025 4:55:08 PM] Moneyline: -116 | Spread: -1.5 | SpreadOdds: +140 | Total: O 8 | TotalOdds: -115; [6/6/2025 5:00:08 PM] Moneyline: -116 | Spread: -1.5 | SpreadOdds: +140 | Total: O 8 | TotalOdds: -115;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T18:16:00.000Z",
+    "Teams": "Los Angeles Dodgers St. Louis Cardinals",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -190 | Spread: -1.5 | SpreadOdds: -111 | Total: O 8.5 | TotalOdds: -105; [6/6/2025 4:55:08 PM] Moneyline: -190 | Spread: -1.5 | SpreadOdds: -111 | Total: O 8.5 | TotalOdds: -105; [6/6/2025 5:00:08 PM] Moneyline: -190 | Spread: -1.5 | SpreadOdds: -111 | Total: O 8.5 | TotalOdds: -105;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T20:06:00.000Z",
+    "Teams": "Atlanta Braves San Francisco Giants",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: +146 | Spread: +1.5 | SpreadOdds: -156 | Total: O 7.5 | TotalOdds: +100; [6/6/2025 4:55:08 PM] Moneyline: +146 | Spread: +1.5 | SpreadOdds: -156 | Total: O 7.5 | TotalOdds: +100; [6/6/2025 5:00:08 PM] Moneyline: +146 | Spread: +1.5 | SpreadOdds: -156 | Total: O 7.5 | TotalOdds: +100;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T20:06:00.000Z",
+    "Teams": "Philadelphia Phillies Pittsburgh Pirates",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -184 | Spread: -1.5 | SpreadOdds: -111 | Total: O 8 | TotalOdds: -122; [6/6/2025 4:55:08 PM] Moneyline: -184 | Spread: -1.5 | SpreadOdds: -111 | Total: O 8 | TotalOdds: -122; [6/6/2025 5:00:08 PM] Moneyline: -184 | Spread: -1.5 | SpreadOdds: -111 | Total: O 8 | TotalOdds: -122;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T20:06:00.000Z",
+    "Teams": "Texas Rangers Washington Nationals",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: -110; [6/6/2025 4:55:08 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: -110; [6/6/2025 5:00:08 PM] Moneyline: -180 | Spread: -1.5 | SpreadOdds: -110 | Total: O 8.5 | TotalOdds: -110;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T20:11:00.000Z",
+    "Teams": "Arizona Diamondbacks Cincinnati Reds",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -120 | Spread: -1.5 | SpreadOdds: +130 | Total: O 9.5 | TotalOdds: -110; [6/6/2025 4:55:08 PM] Moneyline: -120 | Spread: -1.5 | SpreadOdds: +130 | Total: O 9.5 | TotalOdds: -110; [6/6/2025 5:00:08 PM] Moneyline: -120 | Spread: -1.5 | SpreadOdds: +130 | Total: O 9.5 | TotalOdds: -110;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T20:11:00.000Z",
+    "Teams": "Houston Astros Cleveland Guardians",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -138 | Spread: -1.5 | SpreadOdds: +126 | Total: O 7 | TotalOdds: -115; [6/6/2025 4:55:08 PM] Moneyline: -138 | Spread: -1.5 | SpreadOdds: +126 | Total: O 7 | TotalOdds: -115; [6/6/2025 5:00:08 PM] Moneyline: -138 | Spread: -1.5 | SpreadOdds: +126 | Total: O 7 | TotalOdds: -115;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T20:11:00.000Z",
+    "Teams": "Kansas City Royals Chicago White Sox",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -166 | Spread: -1.5 | SpreadOdds: +102 | Total: O 8 | TotalOdds: -122; [6/6/2025 4:55:08 PM] Moneyline: -166 | Spread: -1.5 | SpreadOdds: +102 | Total: O 8 | TotalOdds: -122; [6/6/2025 5:00:08 PM] Moneyline: -166 | Spread: -1.5 | SpreadOdds: +102 | Total: O 8 | TotalOdds: -122;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T20:11:00.000Z",
+    "Teams": "Miami Marlins Tampa Bay Rays",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: +138 | Spread: +1.5 | SpreadOdds: -144 | Total: O 9 | TotalOdds: -115; [6/6/2025 4:55:08 PM] Moneyline: +138 | Spread: +1.5 | SpreadOdds: -144 | Total: O 9 | TotalOdds: -115; [6/6/2025 5:00:08 PM] Moneyline: +138 | Spread: +1.5 | SpreadOdds: -144 | Total: O 9 | TotalOdds: -115;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T23:36:00.000Z",
+    "Teams": "Boston Red Sox New York Yankees",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -106 | Spread: -1.5 | SpreadOdds: +152 | Total: O 8 | TotalOdds: -105; [6/6/2025 4:55:08 PM] Moneyline: -106 | Spread: -1.5 | SpreadOdds: +152 | Total: O 8 | TotalOdds: -105; [6/6/2025 5:00:08 PM] Moneyline: -106 | Spread: -1.5 | SpreadOdds: +152 | Total: O 8 | TotalOdds: -105;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-07T23:36:00.000Z",
+    "Teams": "San Diego Padres Milwaukee Brewers",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: +106 | Spread: +1.5 | SpreadOdds: -192 | Total: O 8 | TotalOdds: -115; [6/6/2025 4:55:08 PM] Moneyline: +106 | Spread: +1.5 | SpreadOdds: -192 | Total: O 8 | TotalOdds: -115; [6/6/2025 5:00:08 PM] Moneyline: +106 | Spread: +1.5 | SpreadOdds: -192 | Total: O 8 | TotalOdds: -115;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-08T01:39:00.000Z",
+    "Teams": "Seattle Mariners Los Angeles Angels",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -158 | Spread: -1.5 | SpreadOdds: +104 | Total: O 9 | TotalOdds: -105; [6/6/2025 4:55:08 PM] Moneyline: -158 | Spread: -1.5 | SpreadOdds: +104 | Total: O 9 | TotalOdds: -105; [6/6/2025 5:00:08 PM] Moneyline: -158 | Spread: -1.5 | SpreadOdds: +104 | Total: O 9 | TotalOdds: -105;"
+  },
+  {
+    "League": "MLB",
+    "GameTime": "2025-06-08T01:41:00.000Z",
+    "Teams": "New York Mets Colorado Rockies",
+    "History": "[6/6/2025 4:49:26 PM] Moneyline: -295 | Spread: -1.5 | SpreadOdds: -192 | Total: O 11 | TotalOdds: -115; [6/6/2025 4:55:08 PM] Moneyline: -295 | Spread: -1.5 | SpreadOdds: -192 | Total: O 11 | TotalOdds: -115; [6/6/2025 5:00:08 PM] Moneyline: -295 | Spread: -1.5 | SpreadOdds: -192 | Total: O 11 | TotalOdds: -115;"
   },
   {
     "League": "NBA",
     "GameTime": "2025-06-06T00:30:00.000Z",
     "Teams": "Indiana Pacers Oklahoma City Thunder",
     "History": "[6/2/2025 11:59:01 AM] Moneyline: +320 | Spread: +9 | SpreadOdds: -106 | Total: O 230.5 | TotalOdds: -112; [6/2/2025 12:00:05 PM] Moneyline: +320 | Spread: +9 | SpreadOdds: -106 | Total: O 230.5 | TotalOdds: -112; [6/2/2025 12:02:01 PM] Moneyline: +320 | Spread: +9 | SpreadOdds: -106 | Total: O 230.5 | TotalOdds: -112; [6/2/2025 12:05:05 PM] Moneyline: +320 | Spread: +9 | SpreadOdds: -106 | Total: O 230.5 | TotalOdds: -112; [6/2/2025 12:10:05 PM] Moneyline: +320 | Spread: +9 | SpreadOdds: -106 | Total: O 230.5 | TotalOdds: -112; [6/2/2025 4:09:55 PM] Moneyline: +320 | Spread: +9 | SpreadOdds: -106 | Total: O 231.5 | TotalOdds: -108; [6/2/2025 4:41:47 PM] Moneyline: +320 | Spread: +9 | SpreadOdds: -106 | Total: O 231.5 | TotalOdds: -108; [6/3/2025 1:41:58 PM] Moneyline: +320 | Spread: +9 | SpreadOdds: -106 | Total: O 231.5 | TotalOdds: -108; [6/3/2025 3:18:27 PM] Moneyline: +330 | Spread: +9 | SpreadOdds: -106 | Total: O 231.5 | TotalOdds: -108; [6/3/2025 3:25:13 PM] Moneyline: +330 | Spread: +9 | SpreadOdds: -106 | Total: O 231.5 | TotalOdds: -108; [6/5/2025 4:35:32 PM] Moneyline: +350 | Spread: +9.5 | SpreadOdds: -106 | Total: O 230.5 | TotalOdds: -106; [6/5/2025 5:10:50 PM] Moneyline: +360 | Spread: +9.5 | SpreadOdds: -106 | Total: O 230 | TotalOdds: -110; [6/5/2025 5:15:06 PM] Moneyline: +360 | Spread: +9.5 | SpreadOdds: -106 | Total: O 230 | TotalOdds: -110; [6/5/2025 5:20:06 PM] Moneyline: +360 | Spread: +9.5 | SpreadOdds: -106 | Total: O 230 | TotalOdds: -110; [6/5/2025 5:25:06 PM] Moneyline: +360 | Spread: +9.5 | SpreadOdds: -106 | Total: O 230 | TotalOdds: -110;"
+  },
+  {
+    "League": "NBA",
+    "GameTime": "2025-06-09T00:00:00.000Z",
+    "Teams": "Indiana Pacers Oklahoma City Thunder",
+    "History": "[6/6/2025 4:49:28 PM] Moneyline: +440 | Spread: +11 | SpreadOdds: -110 | Total: O 227.5 | TotalOdds: -112; [6/6/2025 4:55:07 PM] Moneyline: +440 | Spread: +11 | SpreadOdds: -110 | Total: O 227.5 | TotalOdds: -112; [6/6/2025 5:00:11 PM] Moneyline: +440 | Spread: +11 | SpreadOdds: -110 | Total: O 227.5 | TotalOdds: -112;"
   },
   {
     "League": "NHL",
@@ -334,5 +460,11 @@
     "GameTime": "2025-06-07T00:00:00.000Z",
     "Teams": "Florida Panthers Edmonton Oilers",
     "History": "[6/5/2025 4:35:32 PM] Moneyline: +104 | Spread: +1.5 | SpreadOdds: -245 | Total: O 6.5 | TotalOdds: +106; [6/5/2025 5:10:50 PM] Moneyline: +104 | Spread: +1.5 | SpreadOdds: -245 | Total: O 6.5 | TotalOdds: +106; [6/5/2025 5:15:05 PM] Moneyline: +104 | Spread: +1.5 | SpreadOdds: -245 | Total: O 6.5 | TotalOdds: +106; [6/5/2025 5:20:07 PM] Moneyline: +104 | Spread: +1.5 | SpreadOdds: -245 | Total: O 6.5 | TotalOdds: +106; [6/5/2025 5:25:06 PM] Moneyline: +104 | Spread: +1.5 | SpreadOdds: -245 | Total: O 6.5 | TotalOdds: +106;"
+  },
+  {
+    "League": "NHL",
+    "GameTime": "2025-06-07T00:10:00.000Z",
+    "Teams": "Florida Panthers Edmonton Oilers",
+    "History": "[6/6/2025 4:49:24 PM] Moneyline: -105 | Spread: +1.5 | SpreadOdds: -265 | Total: O 6.5 | TotalOdds: +104; [6/6/2025 4:55:06 PM] Moneyline: -105 | Spread: +1.5 | SpreadOdds: -265 | Total: O 6.5 | TotalOdds: +104; [6/6/2025 5:00:06 PM] Moneyline: -105 | Spread: +1.5 | SpreadOdds: -265 | Total: O 6.5 | TotalOdds: +104;"
   }
 ]
