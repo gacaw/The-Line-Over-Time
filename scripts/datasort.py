@@ -123,8 +123,13 @@ with open(OUTPUT, 'w', newline='', encoding='utf-8') as outfile:
         last_league = game['League']
         history_str = ""
         for dp in game['History']:
+            try:
+                dt = datetime.strptime(dp['DateRecorded'], "%m/%d/%Y")
+                date_str = dt.strftime("%m/%d/%Y")
+            except Exception:
+                date_str = dp['DateRecorded']
             history_str += (
-                f"[{dp['DateRecorded']} {dp['TimeRecorded']}] "
+                f"[{date_str} {dp['TimeRecorded']}] "
                 f"Moneyline: {dp['Moneyline']} | Spread: {dp['Spread']} | SpreadOdds: {dp['SpreadOdds']} | "
                 f"Total: {dp['Total']} | TotalOdds: {dp['TotalOdds']}; "
             )

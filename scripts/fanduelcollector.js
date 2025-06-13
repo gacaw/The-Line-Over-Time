@@ -52,7 +52,9 @@ function runAllScripts() {
         runScriptPromise("puppeteerNHL.js"),
     ]).then(() => {
         runScriptPromise("datasort.py", true).then(() => {
-            runScriptPromise("csvtojson.cjs");
+            runScriptPromise("cleargames.py", true).then(() => {
+                runScriptPromise("csvtojson.cjs");
+            });
         });
     });
 }
