@@ -14,13 +14,21 @@ def is_recent_game(game_time_str):
     except Exception:
         return True
 
-with open(INPUT, encoding='utf-8', newline='') as infile, \
-     open(OUTPUT, 'w', encoding='utf-8', newline='') as outfile:
-    reader = csv.DictReader(infile)
-    writer = csv.DictWriter(outfile, fieldnames=reader.fieldnames)
-    writer.writeheader()
-    for row in reader:
-        if is_recent_game(row['GameTime']):
-            writer.writerow(row)
-
-print("Old games purged.")
+with open(INPUT, encoding='utf-8', newline='') as infile:
+    # Read the first line to check for headers
+    first_line = infile.readline()
+    if not first_line.strip():
+        print("Input file is empty. Nothing to purge.")
+    else:
+        infile.seek(0)
+        reader = csv.DictReader(infile)
+        if not reader.fieldnames:
+            print("No header found in input file. Nothing to purge.")
+        else:
+            with open(OUTPUT, 'w', encoding='utf-8', newline='') as outfile:
+                writer = csv.DictWriter(outfile, fieldnames=reader.fieldnames)
+                writer.writeheader()
+                for row in reader:
+                    if is_recent_game(row['GameTime']):
+                        writer.writerow(row)
+            print("Old games purged.")
