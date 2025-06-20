@@ -1,6 +1,6 @@
 import csv
 import re
-from datetime import datetime, timezone
+from datetime import datetime
 
 INPUT = '../data/linedata.csv'
 OUTPUT = '../data/sorteddata.csv'
@@ -33,6 +33,7 @@ def parse_line(line):
     }
 
 def parse_game_time(game_time):
+    from datetime import timezone
     try:
         if game_time and game_time != "N/A":
             dt = datetime.fromisoformat(game_time.replace("Z", "+00:00"))
@@ -41,7 +42,7 @@ def parse_game_time(game_time):
             return dt
     except Exception:
         pass
-    return datetime.min.replace(tzinfo=timezone.utc)
+    return datetime.min.replace(tzinfo=datetime.timezone.utc)
 
 games = {}
 
@@ -52,9 +53,7 @@ with open(INPUT, encoding='utf-8') as infile:
         parsed = parse_line(line)
         if not parsed:
             continue
-        league = parsed['League']
-        teams = (parsed['Teams'])
-        gametime = parsed['GameTime']
+        game_key = (parsed['League'], parsed['GameTime'], parsed['Teams'])
         datapoint = {
             'DateRecorded': parsed['DateRecorded'],
             'TimeRecorded': parsed['TimeRecorded'],
@@ -64,41 +63,14 @@ with open(INPUT, encoding='utf-8') as infile:
             'Total': parsed['Total'],
             'TotalOdds': parsed['TotalOdds']
         }
-
-        if gametime != "N/A":
-            na_key = (league, "N/A", teams)
-            real_key = (league, gametime, teams)
-            if na_key in games:
-                if real_key not in games:
-                    games[real_key] = {
-                        'League': league,
-                        'GameTime': gametime,
-                        'Teams': teams,
-                        'History': games[na_key]['History']
-                    }
-                else:
-                    games[real_key]['History'].extend(games[na_key]['History'])
-                del games[na_key]
-            # Now add/update the real key
-            if real_key not in games:
-                games[real_key] = {
-                    'League': league,
-                    'GameTime': gametime,
-                    'Teams': teams,
-                    'History': []
-                }
-            games[real_key]['History'].append(datapoint)
-        else:
-            na_key = (league, "N/A", teams)
-            if na_key not in games:
-                games[na_key] = {
-                    'League': league,
-                    'GameTime': "N/A",
-                    'Teams': teams,
-                    'History': []
-                }
-            games[na_key]['History'].append(datapoint)
-
+        if game_key not in games:
+            games[game_key] = {
+                'League': parsed['League'],
+                'GameTime': parsed['GameTime'],
+                'Teams': parsed['Teams'],
+                'History': []
+            }
+        games[game_key]['History'].append(datapoint)
 
 def game_sort_key(g):
     dt = parse_game_time(g['GameTime'])
@@ -123,13 +95,8 @@ with open(OUTPUT, 'w', newline='', encoding='utf-8') as outfile:
         last_league = game['League']
         history_str = ""
         for dp in game['History']:
-            try:
-                dt = datetime.strptime(dp['DateRecorded'], "%m/%d/%Y")
-                date_str = dt.strftime("%m/%d/%Y")
-            except Exception:
-                date_str = dp['DateRecorded']
             history_str += (
-                f"[{date_str} {dp['TimeRecorded']}] "
+                f"[{dp['DateRecorded']} {dp['TimeRecorded']}] "
                 f"Moneyline: {dp['Moneyline']} | Spread: {dp['Spread']} | SpreadOdds: {dp['SpreadOdds']} | "
                 f"Total: {dp['Total']} | TotalOdds: {dp['TotalOdds']}; "
             )

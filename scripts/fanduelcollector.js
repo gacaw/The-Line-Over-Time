@@ -49,7 +49,7 @@ function runAllScripts() {
     Promise.all([
         runScriptPromise("puppeteerMLB.js"),
         runScriptPromise("puppeteerNBA.js"),
-        runScriptPromise("puppeteerNHL.js"),
+        //runScriptPromise("puppeteerNHL.js"),
     ]).then(() => {
         runScriptPromise("datasort.py", true).then(() => {
             runScriptPromise("cleargames.py", true).then(() => {
