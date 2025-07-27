@@ -88,6 +88,23 @@ function GameDetail() {
   );
 }
 
+function calculateVolatility(historyStr) {
+  const entries = historyStr.split(";").filter(Boolean);
+  const moneylines = entries
+    .map(entry => {
+      const match = entry.match(/Moneyline: ([+-]?\d+|N\/A)/);
+      const val = match ? match[1] : "N/A";
+      return val === "N/A" ? null : Number(val);
+    })
+    .filter(v => v !== null && !isNaN(v));
+  if (moneylines.length < 2) return 0;
+  let maxDiff = 0;
+  for (let i = 1; i < moneylines.length; i++) {
+    maxDiff = Math.max(maxDiff, Math.abs(moneylines[i] - moneylines[i - 1]));
+  }
+  return maxDiff;
+}
+
 function App() {
   return (
     <Router>
@@ -102,7 +119,46 @@ function App() {
 
 function LeaguePage() {
   const { league } = useParams();
-  return <GameList league={league} />;
+  const [games, setGames] = useState([]);
+
+  useEffect(() => {
+    fetch("/sortedbutjson.json")
+      .then(res => res.json())
+      .then(data => setGames(data.filter(game => game.League === league)));
+  }, [league]);
+
+  const gamesWithVolatility = games.map(game => ({
+    ...game,
+    volatility: calculateVolatility(game.History)
+  }));
+
+  const topVolatile = [...gamesWithVolatility]
+    .sort((a, b) => b.volatility - a.volatility)
+    .slice(0, 3);
+
+  return (
+    <div>
+      <h2>{league} Games</h2>
+      <Leaderboard topGames={topVolatile} />
+      <GameList league={league} />
+    </div>
+  );
+}
+
+function Leaderboard({ topGames }) {
+  if (!topGames.length) return null;
+  return (
+    <div style={{ margin: "24px 0", padding: "16px", border: "1px solid #ccc", borderRadius: 8 }}>
+      <h3>Most Volatile Games (Moneyline)</h3>
+      <ol>
+        {topGames.map((game, idx) => (
+          <li key={idx}>
+            <strong>{game.Teams}</strong> — Volatility: {game.volatility}
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
 }
 
 export default App;
